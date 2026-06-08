@@ -19,8 +19,8 @@ El objetivo es evaluar tiempos de respuesta, estabilidad, validaciones básicas 
 ## Estructura del proyecto
 
 ```bash
-├── grafana_carga_constante.js
-├── grafana_carga_progresiva.js
+├── quickpizza_carga_constante.js
+├── quickpizza_carga_progresiva.js
 ├── reports/
 │   ├── result_carga_constante.json
 │   ├── result_carga_progresiva.json
@@ -72,13 +72,13 @@ Simula incremento progresivo de usuarios virtuales.
 Para ejecutar un script de carga constante:
 
 ```bash
-k6 run grafana_carga_constante.js
+k6 run quickpizza_carga_constante.js
 ```
 
 Para ejecutar un script de carga progresiva:
 
 ```bash
-k6 run grafana_carga_progresiva.js 
+k6 run quickpizza_carga_progresiva.js
 ```
 
 ---
@@ -87,10 +87,10 @@ k6 run grafana_carga_progresiva.js
 
 ### Exportar resumen en JSON
 ```bash
-k6 run --summary-export=results/result_carga_constante.json grafana_carga_constante.js
+k6 run --summary-export=results/result_carga_constante.json quickpizza_carga_constante.js
 ```
 ```bash
-k6 run --summary-export=results/result_carga_progresiva.json grafana_carga_progresiva.js
+k6 run --summary-export=results/result_carga_progresiva.json quickpizza_carga_progresiva.js
 ```
 
 
